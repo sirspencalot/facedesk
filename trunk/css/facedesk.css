@@ -1,0 +1,41 @@
+a {
+	color: #c3cddf;
+}
+
+a:hover {
+	color: #fff;
+}
+
+body {
+	overflow: hidden;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: ignore;
+	-khtml-user-select: none;
+}
+
+#content-container {
+	width: 819px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#theme-chooser {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75px;
+	height: 15px;
+	background: #415a93;
+	padding: 5px 10px 0;
+	display: none;
+}
+
+iframe#facebook-content {
+	position: relative;
+	width: 815px;
+	height: 100%;
+	border: 0;
+	z-index: 2;
+}
