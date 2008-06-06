@@ -13,7 +13,7 @@ var facedesk = function () {
 		},
 		
 		initFacebook : function () {
-			$("#theme-chooser").setStyle("display", "block");
+			nativeWindow.visible = true;
 		}
 	};
 }();
