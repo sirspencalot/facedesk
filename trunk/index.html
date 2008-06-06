@@ -5,21 +5,33 @@
 	<title>facedesk</title>
 	<link rel="stylesheet" href="css/facedesk.css" type="text/css" />
 	<script type="text/javascript" src="js/AIRAliases.js"></script>
-	<!--<script type="text/javascript" src="js/updater.js"></script>-->
-	<script type="text/javascript" src="js/AIRIntrospector.js"></script>
-	<script type="text/javascript" src="js/AIRSourceViewer.js"></script>
 	<script type="text/javascript" src="js/DOMAssistantComplete.js"></script>
 	<script type="text/javascript" src="js/facedesk.js"></script>
+	<script type="text/javascript" src="js/updater.js"></script>
 </head>
 <body>
 	
-	<div id="settings">
-		<a id="theme-chooser">Choose theme</a>
-	</div>
+	<!-- <div id="settings-container">
+			<div id="settings">
+				<a id="theme-chooser">Choose theme</a>
+			</div>
+		</div> -->
 	
+	<div id="update-available"></div>
+	<div id="update-available-dialog">
+		<h1>Update available</h1>
+		<div id="update-content">
+			<p id="release-notes"></p>
+			<p id="update-buttons">
+				<input type="button" id="update-application" value="Update">
+				<input type="button" id="cancel-update" value="Cancel">
+			</p>
+		</div>
+	</div>
+		
 	<div id="container">
 		<div id="content-container">
-			<!-- <iframe id="facebook-content" name="facebook-content-frame" src="http://www.facebook.com"></iframe> -->
+			<iframe id="facebook-content"></iframe>
 		</div>	
 	</div>
 	

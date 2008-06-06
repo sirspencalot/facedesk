@@ -5,15 +5,12 @@ var facedesk = function () {
 	var fbNavigator = null;
 	return {
 		init : function () {
-			facebook = window.frames["facebook-content-frame"];
-			facebookFrame = $$("facebook-content");
-			if (facebook && facebookFrame) {
-				facebookFrame.onload = this.initFacebook;
-			}
-		},
-		
-		initFacebook : function () {
+			window.moveTo((screen.width / 2) - (window.innerWidth / 2), 50);
+			air.URLRequestDefaults.userAgent = air.URLRequestDefaults.userAgent + " Version\/3.0 Safari";
+			facebook = $$("facebook-content");
+			facebook.src = "http://www.facebook.com";
 			nativeWindow.visible = true;
+			nativeWindow.activate();
 		}
 	};
 }();
