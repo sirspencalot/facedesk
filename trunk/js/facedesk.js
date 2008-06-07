@@ -1,8 +1,6 @@
 /*extern air, $, $$ */
 var facedesk = function () {
 	var facebook = null;
-	var facebookFrame = null;
-	var fbNavigator = null;
 	return {
 		init : function () {
 			window.moveTo((screen.width / 2) - (window.innerWidth / 2), 50);
