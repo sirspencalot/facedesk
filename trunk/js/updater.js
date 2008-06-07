@@ -21,7 +21,7 @@ var updater = function () {
 	
 	var getLatestVersion = function () {
 		$(document).ajax({
-			url : "http://www.robertnyman.com/facedesk/versioning.xml",
+			url : latestVersionCheckUrl,
 			responseType : "xml",
 			callback : function (response) {
 				var releaseNotesNode = response.getElementsByTagName("releasenotes")[0];
