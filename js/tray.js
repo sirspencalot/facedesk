@@ -17,6 +17,8 @@ TrayIcon_Click = function(event){
 };
 var iconLoad = new air.Loader();
 var iconMenu = new air.NativeMenu();
+air.NativeApplication.nativeApplication.autoExit = false;
+window.nativeWindow.addEventListener(air.Event.CLOSING, MainWindow_OnClosing);
 
 var exitCommand = iconMenu.addItem(new air.NativeMenuItem("Exit"));
 // Create An Exit menu entry
@@ -33,6 +35,7 @@ if (air.NativeApplication.supportsSystemTrayIcon) {
     iconLoad.load(new air.URLRequest("icons/AIRApp_16.png"));
     
     air.NativeApplication.nativeApplication.icon.menu = iconMenu;
+	
     traySupport = true;
 } else {
     if (air.NativeApplication.supportsDockIcon) {
