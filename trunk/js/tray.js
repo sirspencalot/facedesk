@@ -7,18 +7,18 @@
 MainWindow_OnClosing = function(event){
     event.preventDefault();
     window.nativeWindow.visible = false;
-}
+};
 TrayIcon_Click = function(event){
 	if (window.nativeWindow.visible) {
 		window.nativeWindow.visible = false;
 	} else {
 		window.nativeWindow.visible = true;
 	}
-}
+};
 window.nativeWindow.addEventListener(air.Event.CLOSING, MainWindow_OnClosing);
 var iconLoadComplete = function(event){
     air.NativeApplication.nativeApplication.icon.bitmaps = new runtime.Array(event.target.content.bitmapData);
-}
+};
 
 air.NativeApplication.nativeApplication.autoExit = false;
 var iconLoad = new air.Loader();
