@@ -12,7 +12,6 @@ var MainWindow_OnClosing = function(event){
     ApplicationExit();
 }
 var MainWindow_OnDisplayStateChange = function(event){
-    alert(event);
     if (event.afterDisplayState == 'minimized') {
         event.preventDefault();
         window.nativeWindow.visible = false;
