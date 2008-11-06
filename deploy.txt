@@ -1,1 +1,1 @@
-adt -package -storetype pkcs12 -keystore facedesk.p12 facedesk.air application.xml index.html js/* css/* images/*
+adt -package -storetype pkcs12 -keystore facedesk.p12 facedesk.air application.xml index.html js/* css/* images/* icons/*
